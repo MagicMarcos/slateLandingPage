@@ -1,0 +1,562 @@
+/******************************************
+/* /* SETUP
+
+1px  = 0.0625rem
+10px = 0.625rem
+12px = 0.75rem
+14px = 0.875rem
+16px = 1rem (base)
+18px = 1.125rem
+20px = 1.25rem
+24px = 1.5rem
+30px = 1.875rem
+32px = 2rem */
+/*******************************************/
+
+/* Box Model Hack */
+* {
+	box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+	content: '.';
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+	color: #000;
+	font-size: 12px;
+	line-height: 1.4;
+	font-family: 'Oswald', Arial, sans-serif;
+	font-weight: 400;
+}
+
+.bodyCont {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	max-width: 1350px;
+	margin: auto;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.noMobile {
+	display: none;
+}
+
+/* !header */
+
+header {
+	background-color: rgb(102, 0, 51);
+	padding: 10px 15px 10px 15px;
+	position: relative;
+}
+
+header a {
+	color: white;
+}
+
+.headFloat50 {
+	float: left;
+	width: 50%;
+}
+
+.headRight {
+	text-align: right;
+	font-size: 20px;
+}
+
+.headRight a {
+	color: white;
+}
+
+h1 {
+	text-align: center;
+	margin: 0;
+}
+
+.mobileHeadItem {
+	float: left;
+	width: 33.3333%;
+	font-size: 25px;
+}
+
+.verticalCenter {
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.mobileSearch {
+	margin-left: 15px;
+}
+
+/* !main */
+
+.mainStoryCont {
+	/* background-image: url('http://a.abcnews.com/images/Politics/gty-trump-presser-01-jc-170216_12x5_1600.jpg');
+	background-position: center;
+	background-size: cover; */
+	color: white;
+	text-align: center;
+}
+
+.leftMain {
+	background-color: rgb(40, 27, 33);
+	height: fit-content;
+	font-size: 15px;
+	padding-top: 1px;
+	padding-bottom: 15px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+}
+
+.mainHeadline p {
+	max-width: 90%;
+	margin: auto;
+}
+
+.leftMain a {
+	color: white;
+	font-size: 30px;
+}
+
+.leftMain p {
+	color: gold;
+}
+
+.leftMain span {
+	color: rgb(182, 180, 180);
+}
+
+.rightMain {
+	background-color: rgb(40, 27, 33);
+	height: fit-content;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+
+.rightMain h3 {
+	text-align: center;
+	font-size: 20px;
+	font-weight: 300;
+	width: 40%;
+	margin: auto;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
+.rightMain a {
+	color: white;
+	max-width: 90%;
+	margin: auto;
+}
+
+.rightMain ul {
+	list-style: none;
+	padding: 0;
+	font-size: 20px;
+}
+
+.rightMain li {
+	max-width: 90%;
+	margin: auto;
+}
+
+/* !plusAd */
+.ad {
+	background: rgb(50, 10, 63);
+	color: white;
+	padding: 0 10px 10px 10px;
+}
+.ad a {
+	color: white;
+}
+
+.plusTeaser {
+	float: left;
+	width: 65%;
+	font-size: 15px;
+	padding-right: 10px;
+}
+
+.plusTeaser span {
+	padding-right: 8px;
+	padding-left: 8px;
+	font-size: 25px;
+	font-weight: 600;
+	border: 2px solid white;
+	border-radius: 50%;
+	background-color: white;
+	color: rgb(50, 10, 63);
+	float: left;
+	margin-top: 20px;
+}
+
+.plusTeaser h4 {
+	float: left;
+	width: 80%;
+	margin-left: 10px;
+}
+
+.slatePlus {
+	float: left;
+	width: 35%;
+	text-align: right;
+}
+
+/* !recents */
+
+.mostRecent {
+	background-color: rgb(102, 0, 51);
+	padding-left: 20px;
+	padding-right: 20px;
+	color: white;
+	position: relative;
+	margin-top: 10px;
+}
+
+.mostRecent a {
+	color: gold;
+}
+
+#seeAll {
+	float: right;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	margin-left: 18%;
+	transform: translate(-50%, -50%);
+}
+
+.moreStories {
+	padding: 10px;
+	padding-top: 0;
+	font-size: 15px;
+	border-bottom: 1px dashed gray;
+}
+
+.moreStories h3 {
+	margin-bottom: 0;
+}
+
+.moreStories p {
+	color: gray;
+}
+
+/* !ad banner */
+.banner {
+	position: fixed;
+	left: 50%;
+	bottom: 0%;
+	transform: translateX(-50%);
+	background-color: rgba(0, 0, 0, 0.781);
+	color: white;
+	text-align: center;
+	width: 100%;
+}
+
+.banner a {
+	color: gold;
+	text-decoration: underline;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media screen and (max-width: 549px) {
+	/* !tabloid */
+	.tabloidLeft {
+		float: left;
+		width: 100%;
+		padding: 8px;
+	}
+
+	.tabloidLeft img {
+		float: left;
+		width: 30%;
+	}
+
+	.tabloidLeft h3 {
+		float: left;
+		padding-left: 10px;
+		width: 70%;
+		font-size: 25px;
+		margin: 0;
+	}
+
+	.tabloidArticles {
+		padding: 10px;
+		font-size: 15px;
+		border-top: 1px dashed gray;
+	}
+
+	.tabloidArticles h3 {
+		margin-top: 0;
+	}
+
+	.tabloidRight {
+		clear: both;
+		margin-top: 15px;
+	}
+}
+
+/* !tablet */
+
+@media screen and (min-width: 550px) and (max-width: 1024px) {
+	.mainStoryCont {
+		background-position: center;
+		background-size: cover;
+		color: white;
+	}
+
+	.tabloid {
+		height: fit-content;
+
+		padding: 8px;
+	}
+
+	.tabloidLeft {
+		float: left;
+		width: 40%;
+		position: relative;
+		height: fit-content;
+		text-align: center;
+	}
+
+	.tabloidLeft img {
+		float: left;
+		width: 100%;
+	}
+
+	.tabloidLeft h3 {
+		float: left;
+		font-size: 25px;
+		margin: 0;
+	}
+
+	.tabloidRight {
+		width: 45%;
+		float: right;
+	}
+
+	.tabloidRight {
+		font-size: 20px;
+	}
+
+	.tabloidArticles {
+		padding: 10px;
+	}
+
+	.tabloidArticles:last-child {
+		background-color: rgb(102, 0, 51);
+		color: white;
+	}
+
+	.tabloidArticles h3 {
+		margin-top: 0;
+	}
+
+	.tabloidArticles:last-child a {
+		color: white;
+	}
+
+	.moreStories {
+		border-bottom: 1px dashed gray;
+		font-size: 20px;
+		padding-left: 20px;
+	}
+
+	.moreStories p {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+/*! desktop */
+
+@media screen and (min-width: 1023px) {
+	.mainStoryCont {
+		background-image: url('http://a.abcnews.com/images/Politics/gty-trump-presser-01-jc-170216_12x5_1600.jpg');
+		background-position: center;
+		background-size: cover;
+		color: white;
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	.noMobile {
+		display: block;
+	}
+
+	.mobileHeader {
+		display: none;
+	}
+
+	.mainContent {
+		float: left;
+		width: 65%;
+	}
+
+	/* ? mainStory */
+
+	.rightMain {
+		float: right;
+		width: 40%;
+		background: none;
+		background-image: linear-gradient(
+			to right,
+			rgb(59, 40, 44, 0),
+			rgba(59, 40, 44, 0.493),
+			rgba(59, 40, 44, 0.788),
+			rgba(59, 40, 44, 0.788),
+			rgba(59, 40, 44, 0.808),
+			rgba(59, 40, 44, 0.808),
+			rgba(59, 40, 44, 0.959),
+			rgba(59, 40, 44, 0.959),
+			rgb(59, 40, 44),
+			rgb(59, 40, 44),
+			rgb(59, 40, 44),
+			rgb(59, 40, 44),
+			rgb(59, 40, 44)
+		);
+	}
+
+	.rightMain h3 {
+		width: 70%;
+	}
+
+	.rightMain li {
+		padding-bottom: 10px;
+	}
+
+	.leftMain p {
+		font-size: 18px;
+		width: 70%;
+		margin: auto;
+		padding-bottom: 10px;
+	}
+
+	.leftMain h2 {
+		margin-top: 0;
+	}
+
+	.leftMain {
+		float: left;
+		width: 40%;
+		text-align: center;
+		margin: 0;
+		height: 354px;
+		background: none;
+		background: rgba(59, 40, 44, 0.959);
+		display: table;
+	}
+
+	.mainHeadline {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	/* ?tabloid */
+
+	.tabloid {
+		padding: 10px;
+	}
+
+	.tabloidLeft {
+		float: left;
+		width: 30%;
+		font-size: 15px;
+	}
+
+	.tabloidLeft img {
+		width: 100%;
+	}
+
+	.tabloidRight {
+		float: right;
+		width: 40%;
+	}
+
+	.tabloidArticles {
+		height: 150px;
+		padding: 10px;
+		font-size: 15px;
+	}
+
+	.tabloidArticles:last-child {
+		background-color: rgb(102, 0, 51);
+		color: white;
+	}
+
+	.tabloidArticles:last-child a {
+		color: white;
+	}
+
+	/* !ad */
+
+	.ad {
+		padding: 1% 2% 1% 2%;
+	}
+
+	/* !aside */
+
+	header {
+		padding-bottom: 0;
+	}
+
+	h1 {
+		margin-top: 0;
+		float: left;
+	}
+
+	header nav {
+		float: right;
+		font-size: 30px;
+	}
+
+	nav a {
+		padding-left: 10px;
+	}
+
+	aside {
+		float: left;
+		width: 35%;
+		padding-left: 10px;
+	}
+
+	.mostRecent {
+		background-color: rgb(40, 27, 33);
+		margin-top: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.moreStories {
+		border: 1px solid lightgray;
+		padding-top: 10px;
+	}
+
+	.moreStories p {
+		margin-top: 0;
+	}
+}
